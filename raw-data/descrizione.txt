@@ -1,0 +1,28 @@
+DATASET 1
+
+Dati: informazioni sulle mutazioni somatiche presenti in pazienti tumorali e il
+tipo di tumore di ogni paziente.
+
+Piu` in dettaglio i dati sono i seguenti (sono tutti file di testo):
+* snvs.txt: file delle mutazioni per ogni paziente. Ogni riga corrisponde a un
+paziente, il primo elemento della riga e` l’ID del paziente mentre gli elementi
+successivi sono i nomi dei geni con mutazioni in quei pazienti. Ogni elemento e`
+separato da una carattere TAB.
+* samples_labels.txt: ogni riga e` un paziente, il primo elemento della riga e`
+l’ID del paziente, il secondo elemento e` il tipo tumorale.
+* Compendium_Cancer_Genes.txt: lista di geni considerati importanti per lo
+sviluppo tumorale, uno per riga. Questa lista e` utile nel caso non sia
+possibile considerare tutti i geni nell'analisi.
+
+Per maggiori informazioni sui dati si veda il sito:
+
+https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
+
+Domande:
+1) E` possibile predire il tipo tumorale a partire dai gene con mutazioni somatiche
+presenti in un paziente?
+2) C'e` un insieme "piccolo" di geni che ha un buon potere preditivo, o almeno
+buono quanto l'insieme di tutti i geni (o di tutti i geni in
+Compendium_Cancer_Genes.txt)?
+3) Il raggruppamento di pazienti sulla base della similarita` dei geni mutati
+(con mutazioni somatiche) riflette il raggruppamento dato dal tipo tumorale?
